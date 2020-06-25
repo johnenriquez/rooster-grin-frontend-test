@@ -1,6 +1,6 @@
 # Rooster Grin Frontend Test
 
-- [Live Site]()
+- [Live Site](https://je-rooster-grin-test.herokuapp.com/)
 - [Repo](https://github.com/johnenriquez/rooster-grin-frontend-test)
 
 To run the dev server:
