@@ -9,3 +9,11 @@ To run the dev server:
 npm install
 npm start
 ```
+
+## Technologies
+
+- `create-react-app`
+  - dev server
+  - react frontend framework
+- `styled-components`
+- deployed on heroku
