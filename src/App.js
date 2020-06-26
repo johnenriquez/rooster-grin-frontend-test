@@ -1,8 +1,18 @@
 import React from 'react';
-import './vendor/normalize.css';
+import Page from './components/Page';
 
-function App() {
-  return <div className='App'>Hello world!</div>;
-}
+const App = () => {
+  return (
+    <Page>
+      <div>splash cover</div>
+      <div>splt, left text, right cover</div>
+      <div>overlay left</div>
+      <div>split, left text, right icons</div>
+      <div>overlay right</div>
+      <div>split, left rating, right carousel</div>
+      <div>footer social</div>
+    </Page>
+  );
+};
 
 export default App;
