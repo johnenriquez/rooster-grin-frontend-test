@@ -16,4 +16,5 @@ npm start
   - dev server
   - react frontend framework
 - `styled-components`
+- `react-reveal` for animations
 - deployed on heroku
