@@ -6,12 +6,18 @@ import Page from './components/Page';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import PageFooter from './components/PageFooter';
+import { Split, SplitContent, ImageCover } from './components/Split';
+import Banner from './components/Banner';
 
+import hero from './assets/hero.jpg';
+import climb from './assets/climb.jpg';
+import banner1 from './assets/banner-1.jpg';
+import banner2 from './assets/banner-2.jpg';
+
+// stub - can be replaced with content from CMS or API
 import * as content from './content';
 
 const PageHeader = styled.header``;
-const Banner = styled.div``;
-const Split = styled.div``;
 
 const PageMain = styled.main``;
 
@@ -23,25 +29,25 @@ const App = () => {
       </PageHeader>
 
       <PageMain>
-        <Hero />
+        <Hero bg={hero} content={content.hero_content} />
 
         <Split>
-          <div>{content.split_content1_left}</div>
-          <div>{content.split_content1_right}</div>
+          <SplitContent>{content.split_content1_left}</SplitContent>
+          <ImageCover img={climb}>{content.split_content1_right}</ImageCover>
         </Split>
 
-        <Banner left>{content.banner_content1}</Banner>
+        <Banner bg={banner1} content={content.banner_content1} />
 
         <Split>
-          <div>{content.split_content2_left}</div>
-          <div>{content.split_content2_right}</div>
+          <SplitContent>{content.split_content2_left}</SplitContent>
+          <SplitContent>{content.split_content2_right}</SplitContent>
         </Split>
 
-        <Banner right>{content.banner_content2}</Banner>
+        <Banner right bg={banner2} content={content.banner_content2} />
 
         <Split>
-          <div>{content.split_content3_left}</div>
-          <div>{content.split_content3_right}</div>
+          <SplitContent>{content.split_content3_left}</SplitContent>
+          <SplitContent>{content.split_content3_right}</SplitContent>
         </Split>
       </PageMain>
 

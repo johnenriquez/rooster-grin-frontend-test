@@ -1,10 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import logoColorUrl from '../assets/logo-color.svg';
+import logoWhiteUrl from '../assets/logo-white.svg';
 
 const Nav = styled.nav`
-  padding: 0.5em;
+  height: 4em;
+  padding: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: -4em;
 `;
 
 const Logo = styled.img`
@@ -14,7 +19,7 @@ const Logo = styled.img`
 
 const Navbar = () => (
   <Nav>
-    <Logo src={logoColorUrl} alt='Rooster Grin Logo' />
+    <Logo src={logoWhiteUrl} alt='Rooster Grin Logo' />
   </Nav>
 );
 
