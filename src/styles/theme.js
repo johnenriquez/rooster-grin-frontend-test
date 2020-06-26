@@ -1,1 +1,1 @@
-export const bodyColor = '#f00';
+export const bodyColor = '#000';

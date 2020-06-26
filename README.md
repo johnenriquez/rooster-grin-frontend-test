@@ -17,4 +17,5 @@ npm start
   - react frontend framework
 - `styled-components`
 - `react-reveal` for animations
+- `font-awesome` for extra icons
 - deployed on heroku

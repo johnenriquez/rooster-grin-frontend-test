@@ -1,16 +1,51 @@
 import React from 'react';
+import styled from 'styled-components';
+
+// components
 import Page from './components/Page';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import PageFooter from './components/PageFooter';
+
+import * as content from './content';
+
+const PageHeader = styled.header``;
+const Banner = styled.div``;
+const Split = styled.div``;
+
+const PageMain = styled.main``;
 
 const App = () => {
   return (
     <Page>
-      <div>splash cover</div>
-      <div>splt, left text, right cover</div>
-      <div>overlay left</div>
-      <div>split, left text, right icons</div>
-      <div>overlay right</div>
-      <div>split, left rating, right carousel</div>
-      <div>footer social</div>
+      <PageHeader>
+        <Navbar />
+      </PageHeader>
+
+      <PageMain>
+        <Hero />
+
+        <Split>
+          <div>{content.split_content1_left}</div>
+          <div>{content.split_content1_right}</div>
+        </Split>
+
+        <Banner left>{content.banner_content1}</Banner>
+
+        <Split>
+          <div>{content.split_content2_left}</div>
+          <div>{content.split_content2_right}</div>
+        </Split>
+
+        <Banner right>{content.banner_content2}</Banner>
+
+        <Split>
+          <div>{content.split_content3_left}</div>
+          <div>{content.split_content3_right}</div>
+        </Split>
+      </PageMain>
+
+      <PageFooter />
     </Page>
   );
 };
