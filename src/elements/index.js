@@ -10,7 +10,11 @@ export const Button = styled.button`
 `;
 
 export const ContentHeading = styled.h2`
-  color: ${(props) => (props.alt ? 'black' : 'purple')};
+  color: ${(props) => (props.altStyle ? 'black' : 'purple')};
+
+  &:first-of-type {
+    margin-top: 0;
+  }
 `;
 
 export const Link = styled.a`

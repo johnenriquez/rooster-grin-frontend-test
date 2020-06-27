@@ -84,7 +84,7 @@ export const split_content1_right = <>&nbsp;</>;
 
 export const split_content2_left = (
   <>
-    <ContentHeading alt>Lorem Ipsum Sit Amet</ContentHeading>
+    <ContentHeading altStyle>Lorem Ipsum Sit Amet</ContentHeading>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et sem
       tempus, tempor libero quis, lacinia tortor. Praesent volutpat quis metus
@@ -105,7 +105,7 @@ export const split_content2_right = (
 
 export const split_content3_left = (
   <>
-    <ContentHeading alt>Lorem Ipsum Dolor Sit Amet</ContentHeading>
+    <ContentHeading altStyle>Lorem Ipsum Dolor Sit Amet</ContentHeading>
     <StarRating rating={5} />
   </>
 );
@@ -113,7 +113,7 @@ export const split_content3_left = (
 export const split_content3_right = (
   <TestimonyCarousel>
     <Testimony>
-      <TestimonyHeading>John Doe 1 08/08/2019</TestimonyHeading>
+      <TestimonyHeading>John Doe 08/08/2019</TestimonyHeading>
       <TestimonyBody>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et sem
         tempus, tempor libero quis, lacinia tortor. Praesent volutpat quis metus
@@ -122,19 +122,16 @@ export const split_content3_right = (
       </TestimonyBody>
     </Testimony>
     <Testimony>
-      <TestimonyHeading>John Doe 1 08/08/2019</TestimonyHeading>
+      <TestimonyHeading>Jane Doe 07/09/2019</TestimonyHeading>
       <TestimonyBody>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et sem
-        tempus, tempor libero quis, lacinia tortor. Praesent volutpat quis metus
-        eu euismod. Morbi est dolor, blandit non lacus non, molestie accumsan
-        lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
-        sem tempus, tempor libero quis, lacinia tortor. Praesent volutpat quis
-        metus eu euismod. Morbi est dolor, blandit non lacus non, molestie
-        accumsan lacus.
+        Morbi est dolor, blandit non lacus non, molestie accumsan lacus. Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Nulla et sem tempus,
+        tempor libero quis, lacinia tortor. Praesent volutpat quis metus eu
+        euismod.
       </TestimonyBody>
     </Testimony>
     <Testimony>
-      <TestimonyHeading>John Doe 1 08/08/2019</TestimonyHeading>
+      <TestimonyHeading>Jack Doe 08/18/2019</TestimonyHeading>
       <TestimonyBody>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et sem
         tempus, tempor libero quis, lacinia tortor. Praesent volutpat quis metus

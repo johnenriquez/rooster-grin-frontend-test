@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Rotate from 'react-reveal/Rotate';
 
+import device from '../styles/device';
+
 const IconTitleOuter = styled.div`
   display: inline-block;
   margin: 0.5em;
@@ -35,7 +37,11 @@ const Title = styled.p`
 
 export const IconGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+
+  @media ${device.tablet} {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const IconTitle = ({ src, title, delay }) => (

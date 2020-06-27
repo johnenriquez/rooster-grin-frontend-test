@@ -1,13 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import device from '../styles/device';
 import { Split, SplitContent } from './Split';
 
 const BannerWrapper = styled.div`
-  background-image: url(${(props) => props.bg});
+  position: relative;
+  padding: 3em 2em;
+  background: url(${(props) => props.bg});
   background-size: cover;
   background-position: center center;
-  padding: 5em 2em;
+  box-shadow: inset 0 0 0 100vh rgba(255, 255, 255, 0.7);
+
+  @media ${device.tablet} {
+    padding: 5em 2em;
+    box-shadow: none;
+  }
 `;
 
 const Banner = ({ bg, content, right }) => (
@@ -15,13 +23,13 @@ const Banner = ({ bg, content, right }) => (
     <Split>
       {right ? (
         <>
-          <SplitContent>&nbsp;</SplitContent>
+          <SplitContent blank>&nbsp;</SplitContent>
           <SplitContent>{content}</SplitContent>
         </>
       ) : (
         <>
           <SplitContent>{content}</SplitContent>
-          <SplitContent>&nbsp;</SplitContent>
+          <SplitContent blank>&nbsp;</SplitContent>
         </>
       )}
     </Split>

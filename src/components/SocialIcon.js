@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { Link } from '../elements';
+
 const SocialIconWrapper = styled.div`
   display: inline;
   padding: 1em;
@@ -13,7 +15,9 @@ const Icon = styled.img`
 
 const SocialIcon = ({ src, network }) => (
   <SocialIconWrapper>
-    <Icon src={src} alt={`${network} social icon`} />
+    <Link href='#!'>
+      <Icon src={src} alt={`${network} social icon`} />
+    </Link>
   </SocialIconWrapper>
 );
 
