@@ -12,12 +12,10 @@ npm start
 
 ## Technologies
 
-- `create-react-app`
-  - dev server
-  - react frontend framework
-- `styled-components` for css
-- `react-reveal` for animations
-- `font-awesome` for extra icons
-- `react-responsive-carousel`
-- Google Fonts for Lato family
-- deployed on heroku
+- `create-react-app` was used as a frontend framework and as a local development server
+- `styled-components` and SCSS were used to modularize the css
+- `react-reveal` was used for triggering css animations
+- `font-awesome` provided the auxiliary icons
+- `react-responsive-carousel` was used so as not to reinvent the wheel
+- `Google Fonts` provided the Lato font family
+- The site was deployed to `Heroku`
