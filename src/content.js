@@ -2,17 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 
+// components
+import { IconGrid, IconTitle } from './components/IconTitle';
+import { Button, ContentHeading, Link } from './elements';
 import {
   TestimonyCarousel,
   Testimony,
   TestimonyHeading,
   TestimonyBody,
 } from './components/TestimonyCarousel';
-
-// components
-import { IconGrid, IconTitle } from './components/IconTitle';
-
-import { Button, ContentHeading, Link } from './elements';
 
 // assets
 import expertise from './assets/home-expertise.svg';

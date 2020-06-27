@@ -15,7 +15,9 @@ npm start
 - `create-react-app`
   - dev server
   - react frontend framework
-- `styled-components`
+- `styled-components` for css
 - `react-reveal` for animations
 - `font-awesome` for extra icons
+- `react-responsive-carousel`
+- Google Fonts for Lato family
 - deployed on heroku

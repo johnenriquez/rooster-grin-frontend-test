@@ -9,6 +9,7 @@ import PageFooter from './components/PageFooter';
 import { Split, SplitContent, ImageCover } from './components/Split';
 import Banner from './components/Banner';
 
+// assets
 import hero from './assets/hero.jpg';
 import climb from './assets/climb.jpg';
 import banner1 from './assets/banner-1.jpg';
@@ -18,7 +19,6 @@ import banner2 from './assets/banner-2.jpg';
 import * as content from './content';
 
 const PageHeader = styled.header``;
-
 const PageMain = styled.main``;
 
 const App = () => {
